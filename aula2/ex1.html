@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <div>
+            <button class="botao">Clique aqui</button>
+        </div>   
+
+        <script>
+            var botaoElement = document.querySelector('button.botao');
+            
+            botaoElement.onclick = function(){
+                var quadrado = document.createElement('div');
+                
+                quadrado.style.width = '100';
+                quadrado.style.height = '100';
+                quadrado.style.backgroundColor = 'red';
+                quadrado.style.marginBottom = '10';
+                
+                var body = document.querySelector('body');
+                body.appendChild(quadrado);
+            }
+    
+        </script>
+    </body>
+
+    
+</html>
